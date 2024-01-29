@@ -29,6 +29,34 @@ TemplateMo 568 DigiMedia
 https://templatemo.com/tm-568-digimedia
 
 -->
+<style>
+  .portfolio-item {
+      height: 300px; /* Adjust the height as needed */
+      width: auto; /* This will maintain the aspect ratio of the images */
+      object-fit: cover; /* This will cover the area without stretching the image */
+  }
+  #brand-logo {
+    font-family: 'Poppins', sans-serif; /* Use a font that matches your brand */
+    font-size: 2em; /* Adjust size as needed */
+    color: #333; /* Adjust color as needed */
+    text-transform: uppercase; /* Optional: makes all letters uppercase */
+    letter-spacing: 2px; /* Optional: increases spacing between letters */
+    font-weight: bold; /* Optional: makes the font bold */
+  }
+  .thumb {
+    height: 200px; /* Fixed height for the container */
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    overflow: hidden; /* Hide overflow */
+  }
+  
+  .service-icon {
+    max-width: 100%; /* Maximum width of the image is 100% of the container */
+    max-height: 100%; /* Maximum height of the image is 100% of the container */
+    object-fit: contain; /* Contain the image within the div without stretching */
+  }
+</style>
   </head>
 
 <body>
@@ -75,9 +103,7 @@ https://templatemo.com/tm-568-digimedia
         <div class="col-12">
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
-            <a href="index.html" class="logo">
-              <img src="assets/images/logo.png" alt="">
-            </a>
+            <a  class="logo" id="brand-logo">kooogle</a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
@@ -109,13 +135,12 @@ https://templatemo.com/tm-568-digimedia
               <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                 <div class="row">
                   <div class="col-lg-12">
-                    <h6>Digital Media Agency</h6>
-                    <h2>We Boost Your Website Traffic</h2>
+                    <h6>Design Agency</h6>
+                    <h2>We Make eyour ideas Live</h2>
                     <p>This template is brought to you by TemplateMo website. Feel free to use this for a commercial purpose. You are not allowed to redistribute the template ZIP file on any other template website. Thank you.</p>
                   </div>
                   <div class="col-lg-12">
                     <div class="border-first-button scroll-to-section">
-                      <a href="#contact">Free Quote</a>
                     </div>
                   </div>
                 </div>
@@ -181,7 +206,7 @@ https://templatemo.com/tm-568-digimedia
                         <div class="progress-value">
                           <div>
                             80%<br>
-                            <span>Photoshop</span>
+                            <span>Design</span>
                           </div>
                         </div>
                       </div>
@@ -199,7 +224,7 @@ https://templatemo.com/tm-568-digimedia
                         <div class="progress-value">
                           <div>
                             80%<br>
-                            <span>Animation</span>
+                            <span>SEO</span>
                           </div>
                         </div>
                       </div>
@@ -230,36 +255,31 @@ https://templatemo.com/tm-568-digimedia
               <div class="row">
                 <div class="col-lg-12">
                   <div class="menu">
-                    <div class="first-thumb active">
+                    <div class="card active" style="width: 15rem;">
                       <div class="thumb">
-                        <span class="icon"><img src="assets/images/service-icon-01.png" alt=""></span>
-                        Apartments
+                        <img class="card-img-top service-icon" src="assets/images/service-icon-01.jpg" alt="Custom-made websites">
+                        websites
                       </div>
                     </div>
-                    <div>
-                      <div class="thumb">                 
-                        <span class="icon"><img src="assets/images/service-icon-02.png" alt=""></span>
-                        Food &amp; Life
+                    <div class="card active" style="width: 15rem;">
+                      <div class="thumb">
+                        <img class="card-img-top service-icon" src="assets/images/service-icon-02.jpg" alt="Custom-made websites">
+                        SEO
                       </div>
                     </div>
-                    <div>
-                      <div class="thumb">                 
-                        <span class="icon"><img src="assets/images/service-icon-03.png" alt=""></span>
-                        Cars
+                    <div class="card active" style="width: 15rem;">
+                      <div class="thumb">
+                        <img class="card-img-top service-icon" src="assets/images/service-icon-03.jpg" alt="Custom-made websites">
+                        Analytics
                       </div>
                     </div>
-                    <div>
-                      <div class="thumb">                 
-                        <span class="icon"><img src="assets/images/service-icon-04.png" alt=""></span>
-                        Shopping
+                    <div class="card active" style="width: 15rem;height">
+                      <div class="thumb">
+                        <img class="card-img-top service-icon" src="assets/images/service-icon-04.jpg" alt="Custom-made websites">
+                        Support
                       </div>
                     </div>
-                    <div class="last-thumb">
-                      <div class="thumb">                 
-                        <span class="icon"><img src="assets/images/service-icon-01.png" alt=""></span>
-                        Traveling
-                      </div>
-                    </div>
+                   
                   </div>
                 </div> 
                 <div class="col-lg-12">
@@ -403,12 +423,8 @@ https://templatemo.com/tm-568-digimedia
         <div class="col-lg-8 offset-lg-2  wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
           <form id="search" action="#" method="GET">
             <div class="row">
-              <div class="col-lg-4 col-sm-4">
-                <fieldset>
-                  <input type="web" name="web" class="website" placeholder="Your website URL..." autocomplete="on" required>
-                </fieldset>
-              </div>
-              <div class="col-lg-4 col-sm-4">
+            
+              <div class="col-lg-8 col-sm-8">
                 <fieldset>
                   <input type="address" name="address" class="email" placeholder="Email Address..." autocomplete="on" required>
                 </fieldset>
@@ -442,8 +458,8 @@ https://templatemo.com/tm-568-digimedia
       <div class="row">
         <div class="col-lg-12">
           <div class="loop owl-carousel">
-            <div class="item" style="height: 300px">
-              <a href="#">
+            <div class="item" style="">
+              <a href="#"
                 <div class="portfolio-item">
                   <div class="thumb">
                     <img src="assets/images/portfolio-01.jpg" alt="">
@@ -453,10 +469,6 @@ https://templatemo.com/tm-568-digimedia
                     <span>Marketing</span>
                   </div>
                 </div>
-              </a>
-            </div>
-            <div class="item" style="height: 300px">
-              <a href="#">
                 <div class="portfolio-item">
                   <div class="thumb">
                     <img src="assets/images/portfolio-02.jpg" alt="">
@@ -467,46 +479,11 @@ https://templatemo.com/tm-568-digimedia
                   </div>
                 </div>
               </a>
-            </div>
-            <div class="item" style="height: 300px">
-              <a href="#">
-                <div class="portfolio-item">
-                  <div class="thumb">
-                    <img src="assets/images/portfolio-03.png" alt="">
-                  </div>
-                  <div class="down-content">
-                    <h4>Website Builder</h4>
-                    <span>Marketing</span>
-                  </div>
+            </div> 
                 </div>
               </a>
             </div>
-            <div class="item" style="height: 300px">
-              <a href="#">
-                <div class="portfolio-item">
-                  <div class="thumb">
-                    <img src="assets/images/portfolio-04.jpg" alt="">
-                  </div>
-                  <div class="down-content">
-                    <h4>Website Builder</h4>
-                    <span>Marketing</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="item" style="height: 300px">
-              <a href="#">
-                <div class="portfolio-item">
-                  <div class="thumb">
-                    <img src="assets/images/portfolio-05.jpg" alt="">
-                  </div>
-                  <div class="down-content">
-                    <h4>Website Builder</h4>
-                    <span>Marketing</span>
-                  </div>
-                </div>
-              </a>
-            </div>
+            
           </div>
         </div>
 
@@ -520,23 +497,23 @@ https://templatemo.com/tm-568-digimedia
         <div class="col-lg-4 offset-lg-4  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.3s">
           <div class="section-heading">
             <h6>Recent News</h6>
-            <h4>Check Our Blog <em>Posts</em></h4>
+            <h4>Check  Blog <em>Posts</em></h4>
             <div class="line-dec"></div>
           </div>
         </div>
         <div class="col-lg-6 show-up wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
           <div class="blog-post">
             <div class="thumb">
-              <a href="#"><img src="assets/images/blog-post-01.jpg" alt=""></a>
+              <a href="https://mailchimp.com/resources/how-to-make-a-website/"><img src="assets/images/blog-post-01.png" alt=""></a>
             </div>
             <div class="down-content">
               <span class="category">SEO Analysis</span>
               <span class="date">03 August 2021</span>
-              <a href="#"><h4>Lorem Ipsum Dolor Sit Amet, Consectetur Adelore
-                Eiusmod Tempor Incididunt</h4></a>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doers itii eiumod deis tempor incididunt ut labore.</p>
-              <span class="author"><img src="assets/images/author-post.jpg" alt="">By: Andrea Mentuzi</span>
-              <div class="border-first-button"><a href="#">Discover More</a></div>
+              <a href="#"><h4>How tobuild a great website</h4></a>
+              <p>To succeed in today’s business world, you need to know how to make a professional website. That’s the case whether you’re building a small brick-and-mortar store, an online business or e-commerce company.
+                 Even when you’re selling yourself as a brand, either to employers or as a freelancer, you need to have an online presence where people can find you and from where you can grow your business.</p>
+              <span class="author"><img src="" alt="">By: Mailchimp</span>
+              <div class="border-first-button"><a href="https://mailchimp.com/resources/how-to-make-a-website/">Discover More</a></div>
             </div>
           </div>
         </div>
@@ -546,42 +523,30 @@ https://templatemo.com/tm-568-digimedia
               <div class="col-lg-12">
                 <div class="post-item">
                   <div class="thumb">
-                    <a href="#"><img src="assets/images/blog-post-02.jpg" alt=""></a>
+                    <a href="https://blog.hubspot.com/marketing/beautiful-blog-design-examples"><img src="assets/images/blog-post-02.png" alt="Beautiful Blog Design"></a>
                   </div>
                   <div class="right-content">
-                    <span class="category">SEO Analysis</span>
-                    <span class="date">24 September 2021</span>
-                    <a href="#"><h4>Lorem Ipsum Dolor Sit Amei Eiusmod Tempor</h4></a>
-                    <p>Lorem ipsum dolor sit amet, cocteturi adipiscing eliterski.</p>
+                    <span class="category">Web Design</span>
+                    <span class="date">07 April 2023</span>
+                    <a href="https://blog.hubspot.com/marketing/beautiful-blog-design-examples"><h4>22 of the Best Examples of Beautiful Blog Design</h4></a>
+                    <p>Explore how design can make or break your blog's success with these inspiring examples of beautiful blog layouts.</p>
                   </div>
                 </div>
               </div>
               <div class="col-lg-12">
                 <div class="post-item">
                   <div class="thumb">
-                    <a href="#"><img src="assets/images/blog-post-03.jpg" alt=""></a>
+                    <a href="https://blog.hubspot.com/blog/tabid/6307/bid/30557/6-guidelines-for-exceptional-website-design-and-usability.aspx"><img src="assets/images/blog-post-03.webp" alt="User Interface Design Guide"></a>
                   </div>
                   <div class="right-content">
-                    <span class="category">SEO Analysis</span>
-                    <span class="date">24 September 2021</span>
-                    <a href="#"><h4>Lorem Ipsum Dolor Sit Amei Eiusmod Tempor</h4></a>
-                    <p>Lorem ipsum dolor sit amet, cocteturi adipiscing eliterski.</p>
+                    <span class="category">UI/UX Design</span>
+                    <span class="date">Recent Post</span>
+                    <a href="https://blog.hubspot.com/blog/tabid/6307/bid/30557/6-guidelines-for-exceptional-website-design-and-usability.aspx"><h4>User Interface Design: A Complete Guide</h4></a>
+                    <p>Get a comprehensive understanding of user interface design principles to enhance your website's user experience.</p>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-12">
-                <div class="post-item last-post-item">
-                  <div class="thumb">
-                    <a href="#"><img src="assets/images/blog-post-04.jpg" alt=""></a>
-                  </div>
-                  <div class="right-content">
-                    <span class="category">SEO Analysis</span>
-                    <span class="date">24 September 2021</span>
-                    <a href="#"><h4>Lorem Ipsum Dolor Sit Amei Eiusmod Tempor</h4></a>
-                    <p>Lorem ipsum dolor sit amet, cocteturi adipiscing eliterski.</p>
-                  </div>
-                </div>
-              </div>
+         
             </div>
           </div>
         </div>
@@ -609,7 +574,8 @@ https://templatemo.com/tm-568-digimedia
               </div>
               <div class="col-lg-5">
                 <div id="map">
-                  <iframe src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="636px" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1599.0979993562041!2d10.220122789499225!3d36.717853755392206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd3708dd495e21%3A0x1a0cd33528f796b9!2sAl%20Mourouj%204%2C%20El%20Mourouj!5e0!3m2!1sen!2stn!4v1705582671793!5m2!1sen!2stn" width="100%" height="636px" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
               </div>
               <div class="col-lg-7">
@@ -619,7 +585,7 @@ https://templatemo.com/tm-568-digimedia
                       <div class="info-post">
                         <div class="icon">
                           <img src="assets/images/phone-icon.png" alt="">
-                          <a href="#">010-020-0340</a>
+                          <a href="#">50695820</a>
                         </div>
                       </div>
                     </div>
@@ -627,7 +593,7 @@ https://templatemo.com/tm-568-digimedia
                       <div class="info-post">
                         <div class="icon">
                           <img src="assets/images/email-icon.png" alt="">
-                          <a href="#">our@email.com</a>
+                          <a href="#">koogle@gmail.com</a>
                         </div>
                       </div>
                     </div>
@@ -635,7 +601,7 @@ https://templatemo.com/tm-568-digimedia
                       <div class="info-post">
                         <div class="icon">
                           <img src="assets/images/location-icon.png" alt="">
-                          <a href="#">123 Rio de Janeiro</a>
+                          <a href="#">EL Morouj ,Tunis</a>
                         </div>
                       </div>
                     </div>
@@ -674,8 +640,8 @@ https://templatemo.com/tm-568-digimedia
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <p>Copyright © 2022 DigiMedia Co., Ltd. All Rights Reserved. 
-          <br>Design: <a href="https://templatemo.com" target="_parent" title="free css templates">TemplateMo</a></p>
+          <p>Copyright © 2024 Kooogle Co., Ltd. All Rights Reserved. 
+          <br>Design: <a href="https://templatemo.com" target="_parent" title="free css templates">Tunis</a></p>
         </div>
       </div>
     </div>
@@ -689,6 +655,53 @@ https://templatemo.com/tm-568-digimedia
   <script src="assets/js/animation.js"></script>
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var contactForm = document.getElementById('contact');
 
+      contactForm.addEventListener('submit', function(event) {
+        alert("thanks")
+        event.preventDefault();
+
+        var formData = new FormData(contactForm);
+        var object = {};
+        formData.forEach(function(value, key) {
+          object[key] = value;
+        });
+
+        alert("thanks")
+        // Prepare the data to match Mailgun's expected format
+        var data = new FormData();
+        data.append('from', 'Your Verified Sender mailgun@sandbox-123.mailgun.org'); // Replace with your verified sender
+        data.append('to', 'mounirrouissi2@gmail.com'); // Recipient email
+        data.append('subject', object.subject);
+        data.append('text', object.message);
+
+        fetch('https://api.mailgun.net/v3/mailgun@sandbox-123.mailgun.org/messages', { // Replace YOUR_DOMAIN with your Mailgun domain
+          method: 'POST',
+          headers: {
+            'Authorization': 'Basic ' + btoa('api:33dfc231b731eaa9e7ab564a4b4c0eb5-4c955d28-19709812') // Replace YOUR_MAILGUN_API_KEY with your actual Mailgun API key
+          },
+          body: data,
+        })
+        .then(function(response) {
+          alert(response)
+          if (response.ok) {
+            return response.json();
+          } else {
+            throw new Error('Network response was not ok.');
+          }
+        })
+        .then(function(data) {
+          console.log('Email sent successfully:', data);
+          // You can add more actions here, for example, showing a success message to the user
+        })
+        .catch(function(error) {
+          console.error('Error sending email:', error);
+          // You can add more actions here, for example, showing an error message to the user
+        });
+      });
+    });
+  </script>
 </body>
 </html>
