@@ -758,29 +758,8 @@ https://templatemo.com/tm-568-digimedia
         data.append('subject', object.subject);
         data.append('text', object.message);
 
-        fetch('https://api.mailgun.net/v3/mailgun@sandbox-123.mailgun.org/messages', { // Replace YOUR_DOMAIN with your Mailgun domain
-          method: 'POST',
-          headers: {
-            'Authorization': 'Basic ' + btoa('api:33dfc231b731eaa9e7ab564a4b4c0eb5-4c955d28-19709812') // Replace YOUR_MAILGUN_API_KEY with your actual Mailgun API key
-          },
-          body: data,
-        })
-        .then(function(response) {
-          alert(response)
-          if (response.ok) {
-            return response.json();
-          } else {
-            throw new Error('Network response was not ok.');
-          }
-        })
-        .then(function(data) {
-          console.log('Email sent successfully:', data);
-          // You can add more actions here, for example, showing a success message to the user
-        })
-        .catch(function(error) {
-          console.error('Error sending email:', error);
-          // You can add more actions here, for example, showing an error message to the user
-        });
+        
+     
       });
     });
   </script>
